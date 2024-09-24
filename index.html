@@ -18,46 +18,46 @@
     </div>
     <!-- firs row -->
     <div class="col-md-4">
-      <label for="formGroupExampleInput" class="form-label fw-bold mb-2">
+      <label for="inputCard" class="form-label fw-bold mb-2">
         Card#
 
       </label>
-      <input type="number" class="form-control" id="formGroupExampleInput" placeholder="XXXXXXXXXXXXXX">
+      <input type="text" class="form-control" id="inputCard" placeholder="XXXXXXXXXXXXXX">
     </div>
     <div class="col-md-4">
-      <label for="formGroupExampleInput" class="form-label fw-bold mb-2">
+      <label for="inputCvc" class="form-label fw-bold mb-2">
         CVC#
-        
+
       </label>
-      <input type="number" class="form-control" id="formGroupExampleInput" placeholder="0000">
+      <input type="text" class="form-control" id="inputCvc" placeholder="0000">
     </div>
     </div>
 
     <div class="col-md-4">
-      <label for="formGroupExampleInput" class="form-label fw-bold mb-2">
+      <label for="inputAmount" class="form-label fw-bold mb-2">
         Amount
       </label>
-      <input type="number" class="form-control" id="formGroupExampleInput" placeholder="Amount">
+      <input type="text" class="form-control" id="inputAmount" placeholder="Amount">
     </div>
-      <!-- second row -->
+    <!-- second row -->
     <div class="col-md-6">
-      <label for="name" class="form-label fw-bold mb-2">
-        First name
+      <label for="name" class="form-label fw-bold mt-2">
+        First Name
       </label>
-      <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+      <input type="text" class="form-control" placeholder="First Name" aria-label="First name">
     </div>
     <div class="col-md-6">
-      <label for="lastName" class="form-label fw-bold mb-2">
+      <label for="lastName" class="form-label fw-bold mt-2">
         Last Name
       </label>
-      <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+      <input type="text" class="form-control" placeholder="Last Name" aria-label="Last name">
     </div>
-      <!-- third row -->
-    <div class="col-md-6">
+    <!-- third row -->
+    <div class="col-md-6 mt-2">
       <label for="inputCity" class="form-label fw-bold">City</label>
       <input type="text" class="form-control" id="inputCity">
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 mt-2">
       <label for="inputState" class="form-label fw-bold">State</label>
       <select id="inputState" class="form-select">
         <option selected>Choose...</option>
@@ -75,8 +75,8 @@
         <option>Falcón</option>
       </select>
     </div>
-    <div class="col-md-2">
-      <label for="inputZip" class="form-label fw-bold">Postal Code</label>
+    <div class="col-md-2 mt-2">
+      <label for="inputZip" class="form-label fw-bold mb-2">Postal Code</label>
       <input type="text" class="form-control" id="inputZip">
     </div>
     <!-- fourth row -->
@@ -86,15 +86,15 @@
         <div class="col-md-6">
           <div class="col-6 bg-secondary rounded py-3 justify-conten-center ">
             <div class="form-check ml-5">
-              <input type="RADIO" name="Ccard" value="visa"><i class="fa-brands fa-cc-visa mx-3"></i>
-              <input type="RADIO" name="Ccard" value="master"><i class="fa-brands fa-cc-mastercard mx-3"></i>
-              <input type="RADIO" name="Ccard" value="american_express"><i class="fa-brands fa-cc-paypal mx-3"></i>
-              <input type="RADIO" name="Ccard" value="discover"><i class="fa-brands fa-cc-discover mx-3"></i>
+              <input type="radio" name="card" value="visa"><i class="fa-brands fa-cc-visa mx-3"></i>
+              <input type="radio" name="card" value="master"><i class="fa-brands fa-cc-mastercard mx-3"></i>
+              <input type="radio" name="card" value="american_express"><i class="fa-brands fa-cc-paypal mx-3"></i>
+              <input type="radio" name="card" value="discover"><i class="fa-brands fa-cc-discover mx-3"></i>
             </div>
           </div>
         </div>
         <div class="col-5 ml-auto">
-          <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+          <label for="exampleFormControlTextarea1" class="form-label fw-bold">Message</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
         </div>
       </div>
@@ -103,7 +103,7 @@
     <!-- footer button -->
     <div class="d-flex justify-content-end col-md-12">
       <button type="reset" class="btn btn-secondary mx-3">Cancel</button>
-      <button type="button" id="sendForm" class="btn btn-primary">Send</button>
+      <button type="submit" id="sendForm" class="btn btn-primary">Send</button>
     </div>
   </form>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -115,6 +115,3 @@
 </body>
 
 </html>
-
-
-

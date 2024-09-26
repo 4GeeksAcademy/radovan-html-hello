@@ -16,20 +16,20 @@
     <div class="bg-light border mb-3">
       <h1>Payment form example</h1>
     </div>
+
     <!-- firs row -->
     <div class="col-md-4">
       <label for="inputCard" class="form-label fw-bold mb-2">
         Card#
-
       </label>
-      <input type="text" class="form-control" id="inputCard" placeholder="XXXXXXXXXXXXXX">
+      <input type="number" class="form-control" id="inputCard" placeholder="XXXXXXXXXXXXXX">
     </div>
+
     <div class="col-md-4">
       <label for="inputCvc" class="form-label fw-bold mb-2">
         CVC#
-
       </label>
-      <input type="text" class="form-control" id="inputCvc" placeholder="0000">
+      <input type="number" class="form-control" id="inputCvc" placeholder="0000">
     </div>
     </div>
 
@@ -37,26 +37,25 @@
       <label for="inputAmount" class="form-label fw-bold mb-2">
         Amount
       </label>
-      <input type="text" class="form-control" id="inputAmount" placeholder="Amount">
+      <input type="number" class="form-control" id="inputAmount" placeholder="Amount">
     </div>
+
     <!-- second row -->
-    <div class="col-md-6">
-      <label for="name" class="form-label fw-bold mt-2">
-        First Name
-      </label>
-      <input type="text" class="form-control" placeholder="First Name" aria-label="First name">
+    <div class="col-sm-6 my-3">
+      <label for="exampleFirst" class="fw-bold mb-2">First Name</label>
+      <input class="form-control" id="exampleFirst" type="text">
     </div>
-    <div class="col-md-6">
-      <label for="lastName" class="form-label fw-bold mt-2">
-        Last Name
-      </label>
-      <input type="text" class="form-control" placeholder="Last Name" aria-label="Last name">
+    <div class="col-sm-6 my-3">
+      <label for="exampleLast" class="fw-bold mb-2">Last Name</label>
+      <input class="form-control" id="exampleLast" type="text">
     </div>
+
     <!-- third row -->
-    <div class="col-md-6 mt-2">
+    <div class="col-md-6 my-2">
       <label for="inputCity" class="form-label fw-bold">City</label>
       <input type="text" class="form-control" id="inputCity">
     </div>
+
     <div class="col-md-4 mt-2">
       <label for="inputState" class="form-label fw-bold">State</label>
       <select id="inputState" class="form-select">
@@ -75,25 +74,49 @@
         <option>Falcón</option>
       </select>
     </div>
+
     <div class="col-md-2 mt-2">
       <label for="inputZip" class="form-label fw-bold mb-2">Postal Code</label>
       <input type="text" class="form-control" id="inputZip">
     </div>
+
     <!-- fourth row -->
-    <div class="container">
+    <div class="container my-4">
       <div class="row">
-        <label for="inputZip" class="form-label fw-bold">We accept:</label>
         <div class="col-md-6">
-          <div class="col-6 bg-secondary rounded py-3 justify-conten-center ">
-            <div class="form-check ml-5">
-              <input type="radio" name="card" value="visa"><i class="fa-brands fa-cc-visa mx-3"></i>
-              <input type="radio" name="card" value="master"><i class="fa-brands fa-cc-mastercard mx-3"></i>
-              <input type="radio" name="card" value="american_express"><i class="fa-brands fa-cc-paypal mx-3"></i>
-              <input type="radio" name="card" value="discover"><i class="fa-brands fa-cc-discover mx-3"></i>
+          <label for="inputZip" class="form-label fw-bold">We accept:</label>
+          <div class="col-7 bg-secondary rounded py-4">
+
+            <div class="d-inline-flex mx-3">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                  value="option1">
+                <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-visa mx-1"></i></label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                  value="option2">
+                <label class="form-check-label" for="inlineRadio2"><i
+                    class="fa-brands fa-cc-mastercard mx-1"></i></label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                  value="option3">
+                <label class="form-check-label" for="inlineRadio3"><i class="fa-brands fa-cc-paypal mx-1"></i></label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3"
+                  value="option4">
+                <label class="form-check-label" for="inlineRadio3"><i class="fa-brands fa-cc-discover mx-1"></i></label>
+              </div>
             </div>
+
           </div>
         </div>
-        <div class="col-5 ml-auto">
+        <div class="col-5">
           <label for="exampleFormControlTextarea1" class="form-label fw-bold">Message</label>
           <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
         </div>
@@ -105,6 +128,7 @@
       <button type="reset" class="btn btn-secondary mx-3">Cancel</button>
       <button type="submit" id="sendForm" class="btn btn-primary">Send</button>
     </div>
+
   </form>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
